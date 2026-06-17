@@ -3,9 +3,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coming Soon</title>
+  <title>Pre-Training Visual Dexterity in Simulation</title>
+  <style>
+    :root {
+      --bg: #0e1116;
+      --fg: #e6e9ef;
+      --muted: #9aa4b2;
+      --accent: #5b9dff;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+    header { text-align: center; margin-bottom: 40px; }
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 12px;
+      line-height: 1.2;
+    }
+    .subtitle { color: var(--muted); font-size: 1.05rem; margin: 0; }
+    .video-card {
+      border-radius: 14px;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    video { display: block; width: 100%; height: auto; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <p>coming soon</p>
+  <div class="wrap">
+    <header>
+      <h1>Pre-Training Visual Dexterity in Simulation</h1>
+      <p class="subtitle">Supplementary video</p>
+    </header>
+    <div class="video-card">
+      <video controls playsinline preload="metadata">
+        <source src="comparison_supplementary.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
 </body>
 </html>
